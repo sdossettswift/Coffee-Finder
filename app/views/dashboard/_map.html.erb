@@ -9,4 +9,11 @@
     id: 'sdossettswift.0m1k88da',
     accessToken: 'pk.eyJ1Ijoic2Rvc3NldHRzd2lmdCIsImEiOiJjaXFtaDhuZ3UwMHF0ZnFuaHM2MG8zczdyIn0.IB6aK5Z1t1wTRvQ3QBiLZA'
 }).addTo(mymap);
+
+  L.marker([<%= @current_location["lat"] %>, <%= @current_location["lon"] %>]).addTo(mymap).bindPopup("You Are Here");
+
+  <% @venues.each do |venue| %>
+    L.marker([<%= venue["location"]["lat"]%>, <%= venue["location"]["lng"]%>]).addTo(mymap).bindPopup("<%= venue["name"] %>");
+
+  <% end %>
 </script>
