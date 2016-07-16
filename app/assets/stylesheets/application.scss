@@ -2,6 +2,8 @@
 @import 'bootstrap';
 @import 'leaflet';
 @import 'dashboard';
+@import "font-awesome-sprockets";
+@import "font-awesome";
  @import 'https://fonts.googleapis.com/css?family=Cutive';
 $red: #f04;
 $aqua: #2df;
@@ -24,4 +26,9 @@ header{
 
 h1{
     color: $aqua;
+}
+
+.search_bar{
+  padding: 10px;
+  margin-right: 20px;
 }

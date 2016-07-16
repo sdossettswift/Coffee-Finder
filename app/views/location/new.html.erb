@@ -13,3 +13,12 @@
       <%= submit_tag "Find Coffee", class: "btn btn-link" %>
     </div>
   <% end %>
+
+
+  <%= form_tag current_location_path do %>
+      <%= text_field_tag :location, "" %>
+
+    <div class="form-group">
+      <%= submit_tag "Find Coffee", class: "btn btn-link" %>
+    </div>
+  <% end %>

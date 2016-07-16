@@ -8,10 +8,18 @@
 </head>
 <body>
   <header>
-Coffee Finder
-<% if @current_location %>
-<%= link_to "New Location", sign_out_path, method: :delete%>
-<%end%>
+    <h1>Coffee Finder</h1>
+    <div class="search_bar">
+      <h5>
+
+<i class="fa fa-coffee" aria-hidden="true"></i>
+
+        <%= form_tag current_location_path do %>
+            <%= text_field_tag :location, "" %>
+            <% end %>
+      </h5>
+    </div>
+
   </header>
 
 <%= yield %>
