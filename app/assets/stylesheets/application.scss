@@ -2,17 +2,17 @@
 @import 'bootstrap';
 @import 'leaflet';
 @import 'dashboard';
-@import 'https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i';
-
+ @import 'https://fonts.googleapis.com/css?family=Cutive';
 $red: #f04;
 $aqua: #2df;
 $beige: #F8E7BE;
 $green: #df2;
 
-
+*{
+  font-family: 'Cutive', serif;
+}
 header{
-  font-size: 60px;
-  font-family: 'IM Fell Great Primer', serif;
+  font-size: 48px;
   height: 10vh;
   background: black;
   color: $green;
@@ -23,6 +23,5 @@ header{
 }
 
 h1{
-    font-family: 'IM Fell Great Primer', serif;
     color: $aqua;
 }
