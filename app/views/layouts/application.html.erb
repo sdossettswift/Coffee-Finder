@@ -7,7 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1>PIZZA</h1>
+  <header>
+Pizza Finder
+<% if @current_location %>
+<%= link_to "New Location", sign_out_path, method: :delete%>
+<%end%>
+  </header>
 
 <%= yield %>
 

@@ -1,0 +1,17 @@
+<div class="container">
+
+  <div class="page-header">
+    <h1>What is Your Current Location?</h1>
+  </div>
+
+  <%= form_tag current_location_path do %>
+    <div class="form-group">
+      <%= label_tag :location %>
+      <%= text_field_tag :location, "", class: "form-control", placeholder: "Your Current Location" %>
+    </div>
+      <div class="form-group">
+        <%= submit_tag "Find the Closest 'Za", class: " btn-lg btn btn-info" %>
+      </div>
+  <%end%>
+
+</div>

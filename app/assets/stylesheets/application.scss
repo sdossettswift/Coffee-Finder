@@ -2,8 +2,27 @@
 @import 'bootstrap';
 @import 'leaflet';
 @import 'dashboard';
+@import 'https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400i';
 
+$red: #f04;
+$aqua: #2df;
+$beige: #F8E7BE;
+$green: #df2;
+
+
+header{
+  font-size: 60px;
+  font-family: 'IM Fell Great Primer', serif;
+  height: 10vh;
+  background: black;
+  color: $green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 h1{
-  text-align: center; 
+    font-family: 'IM Fell Great Primer', serif;
+    color: $aqua;
 }
