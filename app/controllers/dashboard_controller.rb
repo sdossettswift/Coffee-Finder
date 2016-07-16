@@ -13,7 +13,7 @@ class DashboardController < ApplicationController
     lat = @current_location["lat"]
     lon = @current_location["lon"]
 
-    url = "https://api.foursquare.com/v2/venues/search?query=coffee&ll=#{lat},#{lon}&oauth_token=GXYXSRMCPNK5DCV0PZJXDILFPPLFYM1GOE4IU2Z5VEGTMEAX&v=20160715"
+    url = "https://api.foursquare.com/v2/venues/search?query=pizza&ll=#{lat},#{lon}&oauth_token=GXYXSRMCPNK5DCV0PZJXDILFPPLFYM1GOE4IU2Z5VEGTMEAX&v=20160715"
 
     json = JSON.parse(Http.get(url).body)
 
