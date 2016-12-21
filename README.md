@@ -5,3 +5,5 @@
 
 
 This app utilizes the MapBox and Foursquare APIs to locate coffeeshops in proximity to your desired location.  
+
+Coffee Finder is hosted on [Heroku](heroku.com). 
